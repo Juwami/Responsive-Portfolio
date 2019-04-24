@@ -29,7 +29,7 @@ p, form, footer, .navigation {
     color: #ffffff;
     background-color: #4aaaa5;
     text-align: center;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     height: 37px;
 }
 
@@ -51,7 +51,7 @@ p, form, footer, .navigation {
     float: right;
     padding: 25px;
     font-size: 25px;
-    margin-right: 15%;
+    /* margin-right: 15%; */
 }
 
 .topBar {
@@ -120,8 +120,7 @@ footer {
     background-color: #666666;
     height: 50px;
     position: sticky;
-    /* bottom: 0;
-    margin-top: 40px; */
+    width: 100%;
 }
 
 form, input, textarea, br {
@@ -165,4 +164,51 @@ button {
 .linkHoverEffect:hover {
     background-color: #4aaaa5;
     color: #ffffff;
+}
+
+@media screen and (max-width: 980px) {
+    main {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 768px) {
+    main {
+        width: 85%;
+    }
+
+}
+@media screen and (max-width: 640px) {
+    header {
+        position: static;
+    }
+    .myName {
+        width: 100%
+    }
+    nav {
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    main {
+        width: 85%;
+    }
+    .portfolioContainer {
+        wrap: nowrap;
+        height: 100%;
+        margin: 0% 15% 0% 15%;
+    }
+    .portfolioPics {
+        width: 300px;
+        height: 250px;
+    }
+    .portfolioCaption {
+        width: 300px;
+    }
+
+    .profilePic {
+        width: 100%;
+        height: 1%;
+    }
 }
